@@ -1,5 +1,15 @@
-obj/
+# Windows 文件
 *.user
 *.suo
 *.exe
+
+# Visual Studio 相关文件
+.vs/
 bin/
+obj/
+
+# NuGet 包文件夹
+packages/
+
+# 其他临时文件
+*.log

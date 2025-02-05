@@ -6,10 +6,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DF8FCC2B-6163-4DD3-9D72-6E8CFB445F14}</ProjectGuid>
+    <ProjectGuid>{882BFE80-245D-4FD4-8686-CD08D71522A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ECommerceApp</RootNamespace>
-    <AssemblyName>ECommerceApp</AssemblyName>
+    <RootNamespace>EcommerceApp.Test</RootNamespace>
+    <AssemblyName>EcommerceApp.Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -72,13 +72,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Product.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ProductTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECommerceApp\ECommerceApp.csproj">
+      <Project>{df8fcc2b-6163-4dd3-9d72-6e8cfb445f14}</Project>
+      <Name>ECommerceApp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
